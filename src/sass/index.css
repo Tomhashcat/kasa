@@ -1,3 +1,28 @@
-.Root-h1 {
-  color: red;
+/*COLORS*/
+/*FONTS*/
+.Header {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  width: 95%;
+}
+.Header .Logo {
+  background-image: url(../../images/LOGO.svg);
+  width: 31%;
+  height: 68px;
+  border: 2px solid white;
+}
+.Header a {
+  text-decoration: none;
+  color: #FF6060;
+}
+
+/*COLORS*/
+/*FONTS*/
+/*COLORS*/
+/*FONTS*/
+.root {
+  color: #FF6060;
 }/*# sourceMappingURL=index.css.map */

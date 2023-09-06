@@ -1,3 +1,22 @@
-.Root-h1{
-    color: red;
+@import "../utils/Variables";
+
+.Header{
+    display:flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $font-text;
+    width: 95%;
+    
+    .Logo{
+        background-image:url(../../images/LOGO.svg) ;
+        width: 31%;
+        height: 68px;
+        border: 2px solid white;
+    }
+    a{
+        
+        text-decoration: none;
+        color: $color-primary ;
+    }
 }

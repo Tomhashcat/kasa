@@ -1,25 +1,27 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
 
-
-function App() {
+function Header() {
   return (
-    <div className="App">
-      <header className="App-header">
-       
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <header className="Header">
+
+      <img className="Logo"></img>
+      <div className="Links-Header">
+        <a className="Link-Acceuil" href="#" target="_blank"> Acceuil</a>
+        <a className="Link-Acceuil" href="#" target="_blank"> A propos</a>
+      </div>
+
+    </header>
+
   );
 }
 
-export default App;
+
+
+
+
+
+
+export default Header;
