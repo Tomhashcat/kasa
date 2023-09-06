@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './stylesheets/index.scss';
+import './sass/index.scss';
 import App from './components/App.js';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <h1>Bonjour</h1>
+    <h1 className="Root-h1">Bonjour et au revoir</h1>
     <App />
   </React.StrictMode>
 );
