@@ -7,3 +7,28 @@ $color-six: #C5A073;
 
 /*FONTS*/
 $font-text:'Montserrat', sans-serif;
+
+/*BREAKPOINTS*/
+
+$breakpoints: (
+    sm: 768px,
+    md: 1024px,
+    lg: 1280px,
+    xl: 1400px
+);
+
+@function get-bp($bp) {
+    @if $bp {
+        $bp: map-get($breakpoints, $bp);
+    } @else {
+        @error "Parameter #{$bp} is unknown or empty.";
+    }
+
+    @return $bp;
+}
+// variables settings with function call 
+// AFTER FUNCTION DECLARATION
+$bp-sm: get-bp('sm');
+$bp-md: get-bp('md');
+$bp-lg: get-bp('lg');
+$bp-xl: get-bp('xl');
