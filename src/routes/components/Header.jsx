@@ -14,7 +14,7 @@ function Header() {
                 
             
             <div  className="link-container">
-                <div className="div-Orange propos"></div>
+                <div className="div-Orange" id="propos"></div>
                 <a className="Link-propos" href="#" target="_blank"> A propos</a>
             </div>
         </div>

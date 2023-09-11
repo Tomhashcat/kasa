@@ -3,7 +3,7 @@
 
 .Header {
     display: flex;
-    margin: auto;
+    padding: 5px;
     justify-content: space-between;
     align-items: center;
     font-family: $font-text;
@@ -24,76 +24,91 @@
 
     .link-propos {
         display: flex;
-
-
         flex-direction: column-reverse;
-
-
     }
+
+
+
+
 
     .Links-Header {
         display: flex;
+        justify-content: space-between;
+        margin-right: 2%;
 
-
+        @media (max-width: $bp-sm) {
+            width: 174px;
+            justify-content: space-between;
+            margin-right: 0;
+            margin-left: 4%;
+        }
 
         .link-container {
             display: flex;
             align-items: center;
             flex-direction: column-reverse;
-            margin-left: 15px;
-        }
+            margin-left: 50px;
+            justify-content: center;
 
-        .div-Orange {
-            position: absolute;
-            display: none;
-            width: 76px;
-            height: 12px;
-            color: $color-primary;
-
-            border: 1px solid;
-            border-top: none;
-            border-left: none;
-            border-right: none;
-
-
-
-
-
-        }
-
-        .div-Orange propos {
-            margin-left: auto;
-        }
-
-
-
-        a {
-            display: flex;
-            cursor: pointer;
-
-            margin-left: 15px;
-            margin-right: 15px;
-            justify-content: space-around;
-            text-decoration: none;
-            color: $color-primary ;
-        }
-
-        :hover {
-            .div-Orange {
-                display: flex;
+            @media (max-width: $bp-sm) {
+                margin-left: 0%;
             }
 
+
+            .div-Orange {
+                position: absolute;
+                display: none;
+                width: 80px;
+                height: 12px;
+
+                
+            }
+
+
+
+
+
+
+            #propos {
+                margin-right: -6px;
+                width: 100px;
+            }
+
+
+
+            a {
+                display: flex;
+                cursor: pointer;
+                width: 64px;
+                margin-left: 15%;
+                margin-right: 0%;
+                justify-content: space-around;
+                text-decoration: none;
+                color: $color-primary ;
+
+                @media (max-width: $bp-sm) {
+                    text-transform: uppercase;
+                    margin-left: 0%;
+                    width: 83px;
+                    justify-content: space-between;
+
+                }
+            }:hover {
+               
+                    display: flex;
+
+                    color: $color-primary;
+
+                    border: 1px solid;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+
+            }
+
+
+            
+
         }
-
-
-
-
-
-
-
-
-
-
-
     }
 }
