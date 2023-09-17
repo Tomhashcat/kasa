@@ -9,12 +9,14 @@ const StyledLink = styled(Link)`
   font-family: Montserrat;
   text-decoration: none;
   font-size: 18px;
+
 `;
 const LogoImg = styled.img``;
 const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px
 `;
 
 function Header() {
