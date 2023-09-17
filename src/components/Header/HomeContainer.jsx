@@ -1,4 +1,4 @@
-import ImageBannerHome from '../../../assets/Mask-Group.png';
+import ImageBannerHome from '../../assets/Mask-Group.png';
 import React from 'react';
 import styled from 'styled-components';
 
