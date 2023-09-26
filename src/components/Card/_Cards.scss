@@ -3,7 +3,7 @@
     display: flex;
     width: 335px;
     height: 255px;
-  
+
     min-width: 335px;
     transition: transform 1s;
 
@@ -12,7 +12,7 @@
     & img {
         display: flex;
         width: 100%;
-      
+      border-radius: 15px;
         object-fit: cover;
     }
 
@@ -28,10 +28,9 @@
         display: flex;
         align-items: flex-end;
         position: absolute;
-        
+        font-family: Montserrat;
         color: #f1f1f1;
-        left: 5.88%;
-        right: 5.88%;
+        margin-left: 22px;
         top: 78.82%;
         bottom: 5.88%;
     }

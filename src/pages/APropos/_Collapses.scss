@@ -1,77 +1,66 @@
 .collapse {
-	width: 100%;
-	margin: 20px 0;
-background-color:#ff6060 ;
-font-family: Montserrat;
-color: #ffffff;
-border-radius: 5px;
-	&__visible {
-		
-		cursor: pointer;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		height: 30px;
-		padding: 7px 15px;
-		border-radius: 5px;
-		width: 100%;
+  width: 100%;
+  margin: 20px 0;
+  background-color: #ff6060;
+  font-family: Montserrat;
+  color: #ffffff;
+  border-radius: 5px;
+  &__visible {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    padding: 7px 15px;
+    border-radius: 5px;
+    width: 100%;
 
-		
+    h2 {
+    }
+  }
 
-		h2 {
-			
-		}
-	}
-
-	&__toggle {
-		opacity: 0;
-		background-color: #f7f7f7;
-		border-radius: 5px;
-		transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;
-        color: #ff6060;
-		p {
-			margin: 0;
-			padding: 22px 15px;
-			pointer-events: none;
-			
-				
-			
-		}
-	}
+  &__toggle {
+    opacity: 0;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    transition:
+      opacity 0.4s ease-in-out,
+      height 0.4s 0.4s ease-in-out;
+    color: #ff6060;
+    p {
+      margin: 0;
+      padding: 22px 15px;
+      pointer-events: none;
+    }
+  }
 }
 
 .animated {
-	opacity: 1;
-	transition: height 0.4s ease-in-out, opacity 0.4s 0.4s ease-in-out;
+  opacity: 1;
+  transition:
+    height 0.4s ease-in-out,
+    opacity 0.4s 0.4s ease-in-out;
 }
 
 .chevron {
-	width: 9px;
-	transform: rotate(0deg);
-	transition: 0.4s 0.4s ease-in-out;
-
-	
+  width: 9px;
+  transform: rotate(0deg);
+  transition: 0.4s 0.4s ease-in-out;
 }
 
 .rotated {
-	transform: rotate(180deg);
-	transition: 0.4s ease-in-out;
+  transform: rotate(180deg);
+  transition: 0.4s ease-in-out;
 }
 
 .about-style {
-	width: 100%;
-	
-
-	
+  width: 100%;
 }
 
 .collapse-fiche-container {
-	
-	width: 100%;
-
-
+  width: 100%;
 }
 
 .equipList {
-	list-style-type: none;
+  list-style-type: none;
 }

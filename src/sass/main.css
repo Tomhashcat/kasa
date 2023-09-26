@@ -29,6 +29,7 @@ Header a:hover {
 .card-logement img {
   display: flex;
   width: 100%;
+  border-radius: 15px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -42,9 +43,9 @@ Header a:hover {
   display: flex;
   align-items: flex-end;
   position: absolute;
+  font-family: Montserrat;
   color: #f1f1f1;
-  left: 5.88%;
-  right: 5.88%;
+  margin-left: 22px;
   top: 78.82%;
   bottom: 5.88%;
 }
