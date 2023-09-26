@@ -1,0 +1,83 @@
+Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+Header a {
+  padding: 15px;
+  padding-bottom: 0px;
+  color: #ff6060;
+  font-family: Montserrat;
+  text-decoration: none;
+  font-size: 18px;
+}
+Header a:hover {
+  border: 1px solid;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+}
+
+.card-logement {
+  position: relative;
+  display: flex;
+  width: 335px;
+  height: 255px;
+  min-width: 335px;
+  transition: transform 1s;
+}
+.card-logement img {
+  display: flex;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card-logement__layer {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+.card-logement__title {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  color: #f1f1f1;
+  left: 5.88%;
+  right: 5.88%;
+  top: 78.82%;
+  bottom: 5.88%;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+  margin: 22px 0;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 5% 1%;
+  background-color: #f7f7f7;
+  margin: 43px 0;
+}
+
+.link_card_logement {
+  text-decoration: none;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 209px;
+  align-items: center;
+  justify-content: center;
+}
+footer img {
+  width: 20%;
+}
+footer p {
+  color: white;
+}/*# sourceMappingURL=main.css.map */
