@@ -50,10 +50,16 @@ Header a:hover {
   bottom: 5.88%;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+}
+
 .cards-container {
   display: flex;
   justify-content: center;
-  width: 100%;
+  border-radius: 15px;
+  width: 85%;
   gap: 20px;
   margin: 22px 0;
   flex-wrap: wrap;
