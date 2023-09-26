@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import logoImage from '../../assets/images/LOGO.jpg';
+import logoImage from '../../assets/images/LOGOdark.png';
 import "./_Footer.scss";
 const LogoImg = styled.img``;
 

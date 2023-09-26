@@ -4,7 +4,7 @@ import BannerHome from './components/Header/HomeContainer';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Apropos from './pages/APropos/APropos';
-import ErrorPage from './error-page';
+import ErrorPage from './pages/404/error-page';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/*" element={<Apropos />} />
+          <Route path="/Apropos" element={<Apropos />} />
           <Route path="/*" element={<ErrorPage />} />
         </Routes>
       </main>

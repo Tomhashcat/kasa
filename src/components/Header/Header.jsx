@@ -13,7 +13,7 @@ function Header() {
       <LogoImg src={logoImage}></LogoImg>
       <nav>
         <Link  to="/">ACCEUIL</Link>
-        <Link to="/pages/APropos/APropos.jsx" >A PROPOS</Link>
+        <Link to="/Apropos" >A PROPOS</Link>
       </nav>
     </header>
   );
