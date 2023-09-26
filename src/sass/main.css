@@ -145,10 +145,6 @@ footer p {
   list-style-type: none;
 }
 
-.cCDMht {
-  display: none;
-}
-
 .error-page {
   display: flex;
   flex-direction: column;
