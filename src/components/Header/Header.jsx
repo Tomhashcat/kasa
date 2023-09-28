@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import logoImage from '../../assets/images/LOGO.jpg';
-import "./_Header.scss";
+import "./Header.scss";
 
 const LogoImg = styled.img``;
 

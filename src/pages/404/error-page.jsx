@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Home from "../Home/Home";
-import "./_Error.scss"
+import "./Error.scss"
 export default function ErrorPage() {
  
 

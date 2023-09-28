@@ -1,5 +1,5 @@
 import React from 'react';
-import "./_Cards.scss";
+import "./Cards.scss";
 export default function Card({ cover, title }) {
   return (
     <article className="card-logement">
