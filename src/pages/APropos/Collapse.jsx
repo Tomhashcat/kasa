@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
-import Chevron from "../../assets/images/vectorBas.svg"
-import "./Collapses.scss"
+import Chevron from "../../assets/images/vectorBas.svg";
+import "./Collapses.scss";
 
 export default function Collapse(props) {
 	const [toggle, setToggle] = useState(false); // je definis le state du toggle (et false par défaut)
@@ -19,22 +19,24 @@ export default function Collapse(props) {
 
 	return (
 		// affiche le collapse replié par défaut et l'ouvre au clic puis le referme au clic en faisant disparaitre le texte et le style
-		<div className={`collapse ${props.Style}`}>
-			<div onClick={toggleState} className="collapse__visible">
-				<h2>{props.Title}</h2>
-				<img
-					className={toggle ? "chevron rotated" : "chevron"}
-					src={Chevron}
-					alt="chevron"
-				/>
+		
+			<div className={`collapse ${props.Style}`}>
+				<div onClick={toggleState} className="collapse__visible">
+					<h2>{props.Title}</h2>
+					<img
+						className={toggle ? "chevron rotated" : "chevron"}
+						src={Chevron}
+						alt="chevron"
+					/>
+				</div>
+				<div
+					ref={refHeight}
+					className={toggle ? "collapse__toggle animated" : "collapse__toggle"}
+					style={{ height: toggle ? `${heightEl}` : "0px" }}
+				>
+					<p aria-hidden={toggle ? "true" : "false"}>{props.Text}</p>
+				</div>
 			</div>
-			<div
-				ref={refHeight}
-				className={toggle ? "collapse__toggle animated" : "collapse__toggle"}
-				style={{ height: toggle ? `${heightEl}` : "0px" }}
-			>
-				<p aria-hidden={toggle ? "true" : "false"}>{props.Text}</p>
-			</div>
-		</div>
+		
 	);
 }

@@ -1,0 +1,40 @@
+#carrousel-container {
+  padding: 50px 0px 0px 0px;
+
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 5%;
+  .arrow {
+    position: absolute;
+    
+
+    margin-top: 11%;
+    width: 60px;
+    height: 93px;
+  }
+  .leftArrow {
+    margin-left: -40%;
+  }
+  .rightArrow {
+    margin-left: 35.5%;
+  }
+  img {
+   
+    object-fit: cover;
+    height: 415px;
+    border-radius: 25px;
+    width: 85%;
+    mix-blend-mode: normal;
+  }
+  .slider {
+    opacity: 0;
+    transition: opacity ease-in-out 0.6s;
+  }
+  .active-anim {
+    opacity: 1;  
+  }
+}
+.title-container {
+  margin-top: 30px;
+}

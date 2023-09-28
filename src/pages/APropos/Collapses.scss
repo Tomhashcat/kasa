@@ -1,5 +1,10 @@
+main {
+  display: block;
+  width: 85%;
+}
+
 .collapse {
-  width: 100%;
+  
   margin: 20px 0;
   background-color: #ff6060;
   font-family: Montserrat;
@@ -12,11 +17,9 @@
     align-items: center;
     height: 30px;
     padding: 7px 15px;
+    
     border-radius: 5px;
     width: 100%;
-
-    h2 {
-    }
   }
 
   &__toggle {

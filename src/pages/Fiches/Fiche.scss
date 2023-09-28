@@ -1,0 +1,26 @@
+.hostInfo-container {
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  font-family: Montserrat;
+  color: #ff6060;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  .title-tags-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.collapse-fiche {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  .undefined {
+    width: 35%;
+  }
+}
