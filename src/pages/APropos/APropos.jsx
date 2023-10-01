@@ -1,8 +1,7 @@
 
 import React from 'react';
-
 import AproposData from "./AproposData.json";
-import Collapse from './Collapse';
+import Collapse from '../../components/Collapse/Collapse';
 
 
  function Apropos() {

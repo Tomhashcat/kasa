@@ -1,4 +1,5 @@
 #carrousel-container {
+  
   padding: 50px 0px 0px 0px;
 
   flex-direction: row;
@@ -14,10 +15,10 @@
     height: 93px;
   }
   .leftArrow {
-    margin-left: -40%;
+    margin-left: -35%;
   }
   .rightArrow {
-    margin-left: 35.5%;
+    margin-left: 29.5%;
   }
   img {
    
@@ -27,7 +28,9 @@
     width: 85%;
     mix-blend-mode: normal;
   }
+  
   .slider {
+   
     opacity: 0;
     transition: opacity ease-in-out 0.6s;
   }
@@ -35,6 +38,14 @@
     opacity: 1;  
   }
 }
+.slider__number{
+  display: flex;
+  color: white;
+    position: absolute;
+    margin-top: -3%;
+    margin-left:39%;
+    font-size: 54;
+  }
 .title-container {
   margin-top: 30px;
 }
