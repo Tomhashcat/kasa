@@ -1,0 +1,21 @@
+.Banner {
+  display: flex;
+  justify-content: center;
+  .Banner-Home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 223px;
+    margin-bottom: 50px;
+  }
+  .Text-Banner {
+    width: 50%;
+    position: absolute;
+    color: white;
+    font-family: Montserrat;
+    font-size: 48px;
+    margin-top: 9%;
+    margin-left: 20px;
+  }
+}

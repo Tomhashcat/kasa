@@ -1,37 +1,52 @@
 .card-logement {
   position: relative;
   display: flex;
-  width: 335px;
-  height: 255px;
-
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
   min-width: 335px;
   transition: transform 1s;
 
-  & img {
+  .gradient {
+    position: absolute;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+    border-radius: 10px;
+    width: 340px;
+    height: 340px;
+  }
+
+  img {
+    height: 100%;
     display: flex;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
     object-fit: cover;
   }
 
-  &__layer {
+  .layer {
     display: flex;
+    position: absolute;
     align-items: center;
     position: absolute;
     bottom: 0;
   }
 
-  &__title {
+  .title {
     display: flex;
     align-items: flex-end;
     position: absolute;
     font-family: Montserrat;
     color: #ffffff;
-    margin-left: 22px;
-
-    bottom: -3px;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: -16px;
   }
 }
+
 main {
   display: flex;
   justify-content: center;
@@ -40,16 +55,14 @@ main {
   display: flex;
   justify-content: center;
   border-radius: 15px;
-  width: 85%;
-margin-left: auto;
-margin-right: auto;
+  width: 99%;
+  margin-left: auto;
+  margin-right: auto;
   flex-wrap: wrap;
 
   gap: 50px;
   padding: 5% 1%;
   background-color: #f7f7f7;
-
-  
 }
 
 .link_card_logement {

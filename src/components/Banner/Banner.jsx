@@ -10,10 +10,13 @@ const Image = styled.img`
 
 function BannerHome() {
   return (
-    <DivBanner className="Banner-Home">
-      <Image src={ImageBannerHome} alt="Banner Home" />
+    <div className="Banner">
+      <DivBanner className="Banner-Home">
+        <Image src={ImageBannerHome} alt="Banner Home" />
+       
+      </DivBanner> 
       <p className="Text-Banner">Chez vous, partout et ailleurs</p>
-    </DivBanner>
+    </div>
   );
 }
 export default BannerHome;

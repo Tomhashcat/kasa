@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './components/Header/Header';
-import BannerHome from './components/Header/Banner';
+import BannerHome from './components/Banner/Banner';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Apropos from './pages/APropos/APropos';

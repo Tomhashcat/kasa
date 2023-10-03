@@ -1,12 +1,14 @@
 import React from 'react';
-import "./Cards.scss";
+import './Cards.scss';
 export default function Card({ cover, title }) {
   return (
     <article className="card-logement">
-      <img src={cover} alt="location" />
-      <div className="card-logement__layer">
-        <p className="card-logement__title">{title}</p>
-      </div>
+      <div className="gradient"> </div>
+        <img src={cover} alt="location" />
+        <div className="card-logement layer">
+          <p className="card-logement title">{title}</p>
+        </div>
+     
     </article>
   );
 }
