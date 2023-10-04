@@ -8,7 +8,7 @@ export default function Collapse(props) {
 
   const toggleState = () => {
     // définis la fonction toggleState qui modifie la valeur toggle au clic
-    setToggle(!toggle);
+    setToggle(prevToggle => !prevToggle);
   };
 
   const refHeight = useRef(); //récupère et conserve la valeur de hauteur du collapse déplié

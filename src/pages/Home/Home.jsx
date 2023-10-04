@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-
+import BannerHome from '../../components/Banner/Banner';
 import Card from '../../components/Card/Cards';
 import { Link } from 'react-router-dom';
+import "./Home.scss";
 
 export default function Home() {
   const [data, setData] = useState([]);
@@ -17,6 +18,7 @@ export default function Home() {
 
   return (
     <>
+     <BannerHome />
       <div className="cards-container">
         {data.map((appart, id) => (
           <div className="card_logement" key={id}>

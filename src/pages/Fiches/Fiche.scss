@@ -1,27 +1,80 @@
+
 .hostInfo-container {
   display: flex;
-  width: 85%;
+  width: 100%;
   justify-content: space-between;
   font-family: Montserrat;
   color: #ff6060;
   align-items: center;
+  margin-top: -5%;
   margin-left: auto;
   margin-right: auto;
   .title-tags-container {
     display: flex;
     flex-direction: column;
   }
-  
+  .rate-host-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+    .host-comp {
+      display: flex;
+      margin-left: 39px;
+      align-items: center;
+      .host-name {
+        width: 93px;
+        height: 52px;
+        display: flex;
+        font-size: 18px;
+      }
+
+      img {
+        width: 64px;
+        height: 64px;
+        border-radius: 65px;
+      }
+    }
+    .rate-comp {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      width: 196px;
+      .star {
+        width: 24px;
+        height: 24px;
+        fill: #ff6060;
+      }
+    }
+  }
 }
-.collapse-fiche {
-  width: 85%;
+.tags-container {
+  display: flex;
+  text-align: center;
+  width: 365px;
+  justify-content: space-between;
+  .tagContainer {
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: #ff6060;
+    color: white;
+    .tagButton {
+      font-size: 15px;
+    }
+  }
+}
+.collapse-fiche-container {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
-  .undefined {
-    width: 47%;
+  .sizeCol{
+    width: 45%;
+    @media screen and (min-width: 1440px) {
+      width: 582px;
+    }
   }
 }

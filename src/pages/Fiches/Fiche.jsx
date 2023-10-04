@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import React ,{ useState, useEffect } from 'react';
+
 import { useParams, useNavigate } from 'react-router-dom';
 import Carrousel from '../../components/Carrousel/Carroussel';
 import Collapse from '../../components/Collapse/Collapse';
@@ -15,7 +16,8 @@ export default function FicheLogement() {
   const [pickedAppart, setPickedAppart] = useState();
   useEffect(() => {
     const getData = async () => {
-      const res = await axios.get('/logements.json');  const picked = res.data.find(({ id }) => id === params.id);
+      const res = await axios.get('/logements.json');
+      const picked = res.data.find(({ id }) => id === params.id);
       res.data.map(() => setPickedAppart(picked));
       if (picked === undefined) {
         navigate('/404', { state: { message: "Can't get data" } }); //renvoi vers la page 404 en cas d'URL de logement invalide
@@ -62,13 +64,18 @@ export default function FicheLogement() {
             </div>
           </div>
         </section>
-        <div className="collapse-fiche">
-          <Collapse
-            className="col-Fiche"
-            Title="Description"
-            Text={pickedAppart.description}
-          />
-          <Collapse className="col-Fiche" Title="Équipements" Text={equip} />
+
+        <div className="collapse-fiche-container">
+         <div className="sizeCol">
+            <Collapse
+              className="col-Fiche"
+              Title="Description"
+              
+              Text={pickedAppart.description}
+              
+            />
+         </div>
+          <div className="sizeCol"><Collapse className="col-Fiche" Title="Équipements" Text={equip} /></div>
         </div>
       </div>
     )

@@ -17,22 +17,24 @@ export default function Carrousel({ slides }) {
 
 	return (
 		<section id="carrousel-container">
-			{length > 1 && (
-				<img
-					src={left} //Affichage des flèches seulement si length > 1
-					alt="gauche"
-					onClick={prevSlide}
-					className="arrow leftArrow"
-				/>
-			)}
-			{length > 1 && (
-				<img
-					src={right}
-					alt="droite"
-					onClick={nextSlide}
-					className="arrow rightArrow"
-				/>
-			)}
+		<div className="arrows">
+				{length > 1 && (
+					<img
+						src={left} //Affichage des flèches seulement si length > 1
+						alt="gauche"
+						onClick={prevSlide}
+						className="arrow leftArrow"
+					/>
+				)}
+				{length > 1 && (
+					<img
+						src={right}
+						alt="droite"
+						onClick={nextSlide}
+						className="arrow rightArrow"
+					/>
+				)}
+		</div>
 			{slides.map((slide, index) => (
 				<div
 					key={index} // mise en place du slider avec affichage conditionnel et opacity=1 quand le slide en cours vaut l'index
