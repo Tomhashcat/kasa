@@ -1,21 +1,37 @@
 .colcontainer {
+  @media screen and (max-width: 375px) {
+    width: 335px;
+    
+  }
   .BannerAp {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 223px;
+   
     margin-bottom: 50px;
     margin-top: 50px;
     @media screen and (min-width: 1440px) {
       width: 1240px;
     }
-    img{
-        width: 100%;
+    @media screen and (min-width: 375px) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    img {
+      width: 100%;
+      
+      @media screen and (max-width: 375px) {
+        
+        height: 111px;
+      }
     }
   }
-  .collapse{
+  .collapse {
     margin-left: auto;
     margin-right: auto;
+    @media screen and (max-width: 375px) {
+     margin-bottom: 0px;
+      width: 100%;
+    }
   }
 }

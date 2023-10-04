@@ -1,21 +1,43 @@
 .Banner {
   display: flex;
   justify-content: center;
+  
   .Banner-Home {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     width: 100%;
     height: 223px;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 375px) {
+      margin-top: 20px;
+      height: 111px;
+      margin-bottom: 5px;
+    }
   }
+  img {
+    width: 100%;
+    height: 223px;
+    @media screen and (max-width: 375px) {
+   
+      height: 111px;
+    }
+  }
+
   .Text-Banner {
-    width: 50%;
     position: absolute;
     color: white;
     font-family: Montserrat;
     font-size: 48px;
-    margin-top: 9%;
+    align-self: center;
+   width: auto;
     margin-left: 20px;
+    @media screen and (max-width: 375px) {
+      width: 217px;
+      left:0;
+      font-size: 24px;
+    }
   }
 }

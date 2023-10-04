@@ -1,6 +1,6 @@
 #carrousel-container {
   padding: 50px 0px 0px 0px;
-  
+  align-items: center;
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
@@ -11,22 +11,36 @@
     display: flex;
     position: absolute;
     flex-direction: row;
-    width: 90%;
-    
+    width: 100%;
+
     justify-content: space-between;
+    @media screen and (max-width: 375px) {
+    }
     @media screen and (min-width: 1440px) {
       width: 1240px;
     }
+
     .arrow {
       margin-top: 12%;
       width: 60px;
       height: 93px;
+      @media screen and (max-width: 375px) {
+        margin-top: 31%;
+        width: 24px;
+        height: 24px;
+      }
     }
     .leftArrow {
       margin-left: 4%;
+      @media screen and (max-width: 375px) {
+        margin-left: 35%;
+      }
     }
     .rightArrow {
       margin-right: 4%;
+      @media screen and (max-width: 375px) {
+        margin-right: -19%;
+      }
     }
   }
   img {
@@ -35,6 +49,10 @@
     border-radius: 25px;
     width: 100%;
     mix-blend-mode: normal;
+    @media screen and (max-width: 375px) {
+      width: 335px;
+      height: 255px;
+    }
   }
 
   .slider {

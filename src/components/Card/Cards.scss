@@ -6,7 +6,10 @@
   border-radius: 10px;
   min-width: 335px;
   transition: transform 1s;
-
+  @media screen and (min-width: 375px) {
+    width: 335px;
+    height: 255px;
+  }
   .gradient {
     position: absolute;
     background: linear-gradient(
@@ -17,6 +20,10 @@
     border-radius: 10px;
     width: 340px;
     height: 340px;
+    @media screen and (min-width: 375px) {
+      width: 335px;
+      height: 255px;
+    }
   }
 
   img {
@@ -60,6 +67,10 @@
   gap: 50px;
   padding: 5% 1%;
   background-color: #f7f7f7;
+  @media screen and (max-width: 375px) {
+   background-color: white;
+   gap: 20px;
+  }
 }
 
 .link_card_logement {

@@ -7,6 +7,7 @@
   font-family: Montserrat;
   color: #ffffff;
   border-radius: 5px;
+  
   &__visible {
     cursor: pointer;
     display: flex;
@@ -16,6 +17,7 @@
     padding: 7px 15px;
     
     border-radius: 5px;
+    
     
   }
 
@@ -43,7 +45,7 @@
 }
 
 .chevron {
-  width: 9px;
+  width: 24px;
   transform: rotate(0deg);
   transition: 0.4s 0.4s ease-in-out;
 }
