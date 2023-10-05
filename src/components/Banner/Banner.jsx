@@ -3,9 +3,9 @@ import React from 'react';
 import styled from 'styled-components';
 import "./Banner.scss";
 const DivBanner = styled.div`
-margin-top:50px`;
+`;
 const Image = styled.img`
-  width: 100%; /* Ajoutez une largeur pour l'image */
+  
 `;
 
 function BannerHome() {
