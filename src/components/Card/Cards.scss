@@ -66,6 +66,10 @@
   gap: 50px;
   padding: 5% 1%;
   background-color: #f7f7f7;
+  @media screen and (min-width: 1440px) {
+    width: 1240px;
+   
+  }
   @media screen and (max-width: 375px) {
     background-color: white;
     gap: 20px;
