@@ -1,29 +1,44 @@
 Header {
   display: flex;
   justify-content: space-between;
-  width: 89%;
+  width: 90%;
   margin-top: 50px;
   align-items: center;
+  @media screen and (min-width: 1024px) {
+  }
   @media screen and (min-width: 1440px) {
     width: 1240px;
+    width: 75%;
   }
   @media screen and (max-width: 375px) {
     width: 335px;
     margin-top: 20px;
     margin-bottom: 0px;
   }
-  img{
+  img {
     @media screen and (max-width: 375px) {
       width: 145px;
     }
   }
+  nav {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    @media screen and (min-width: 375px) {
+      width: 212px;
+    margin-left: 11%;
+    }
+  }
   a {
-    padding: 15px;
+    display: flex;
+
+    padding: 5px;
     padding-bottom: 0px;
     color: #ff6060;
     font-family: Montserrat;
     text-decoration: none;
     font-size: 18px;
+
     @media screen and (max-width: 375px) {
       font-size: 12px;
     }

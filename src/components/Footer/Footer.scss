@@ -17,8 +17,12 @@ footer {
   p {
     color: white;
   }
-  @media screen and (min-width: 375px) {
+  @media screen and (max-width: 375px) {
     margin-top: 0px;
+     
+   }
+   @media screen and (min-width: 375px) {
+    margin-top: 20px;
      
    }
 }
