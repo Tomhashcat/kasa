@@ -1,4 +1,3 @@
-
 .hostInfo-container {
   display: flex;
   width: 100%;
@@ -9,9 +8,21 @@
   margin-top: -5%;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (max-width: 375px) {
+    width: 335px;
+    margin-top: -52px;
+  }
   .title-tags-container {
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: 375px) {
+     font-size: 18px;
+    }
+    h3{
+      @media screen and (max-width: 375px) {
+        font-size: 14px;
+       }
+    }
   }
   .rate-host-container {
     display: flex;
@@ -21,6 +32,11 @@
       display: flex;
       margin-left: 39px;
       align-items: center;
+      @media screen and (max-width: 375px) {
+       position: absolute;
+       margin-left: -192px;
+       margin-top: 60px;
+       }
       .host-name {
         width: 93px;
         height: 52px;
@@ -39,10 +55,20 @@
       justify-content: space-between;
       margin-top: 20px;
       width: 196px;
+      @media screen and (max-width: 375px) {
+        position: absolute;
+        margin-left: -360px;
+        margin-top: 80px;
+        width: 99px;
+        }
       .star {
         width: 24px;
         height: 24px;
         fill: #ff6060;
+        @media screen and (max-width: 375px) {
+          
+          width: 13px;
+          }
       }
     }
   }
@@ -52,14 +78,34 @@
   text-align: center;
   width: 365px;
   justify-content: space-between;
+  @media screen and (max-width: 375px) {
+    justify-content: flex-start;
+  
+    margin-bottom: 72px;
+  }
   .tagContainer {
     width: 115px;
     height: 25px;
     border-radius: 10px;
     background-color: #ff6060;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 375px) {
+      width: 84px;
+      
+      margin-right: 15px;
+       }
     .tagButton {
       font-size: 15px;
+      
+      
+      @media screen and (max-width: 375px) {
+        display: flex;
+        font-size: 10px;
+        
+      }
     }
   }
 }
@@ -67,14 +113,22 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  
+
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
-  .sizeCol{
+  @media screen and (max-width: 375px) {
+    width: 335px;
+    margin-top: 0px;
+    flex-direction: column;
+  }
+  .sizeCol {
     width: 45%;
     @media screen and (min-width: 1440px) {
       width: 582px;
+    }
+    @media screen and (max-width: 375px) {
+      width: 100%;
     }
   }
 }
