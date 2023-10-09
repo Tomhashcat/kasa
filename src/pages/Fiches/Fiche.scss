@@ -12,6 +12,7 @@
     width: 335px;
     margin-top: -52px;
   }
+
   .title-tags-container {
     display: flex;
     flex-direction: column;
@@ -28,6 +29,9 @@
     display: flex;
     flex-direction: column;
     margin-right: 0px;
+    @media screen and (max-width: 375px) {
+      margin-top: 5px;
+    }
     .host-comp {
       display: flex;
       margin-left: 39px;
@@ -104,6 +108,7 @@
       @media screen and (max-width: 375px) {
         display: flex;
         font-size: 10px;
+        
         
       }
     }

@@ -21,7 +21,7 @@
     }
 
     .arrow {
-      margin-top: 12%;
+      margin-top: 14%;
       width: 60px;
       height: 93px;
       @media screen and (max-width: 375px) {
@@ -39,7 +39,7 @@
     .rightArrow {
       margin-right: 4%;
       @media screen and (max-width: 375px) {
-        margin-right: 14%;
+        margin-right: 10%;
       }
     }
   }
@@ -68,9 +68,21 @@
   color: white;
   position: absolute;
   margin-top: -3%;
-  margin-left: 40%;
+  margin-left: 43%;
   font-size: 54;
+  @media screen and (max-width: 375px) {
+    margin-top: -8%;
+  }
 }
 .title-container {
   margin-top: 30px;
+  @media screen and (max-width: 375px) {
+    width: 335px;
+    margin-top: 9%;
+    h1 {
+      display: flex;
+
+      font-size: 18px;
+    }
+  }
 }
