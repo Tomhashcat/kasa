@@ -1,17 +1,17 @@
 .collapse {
   margin: 20px 0;
-  background-color: #ff6060;
+  
   font-family: Montserrat;
   color: #ffffff;
   border-radius: 5px;
 
   &__visible {
-    cursor: pointer;
+    cursor: pointer;background-color: #ff6060;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 30px;
-    padding: 7px 15px;
+    padding: 6px 15px;
 
     border-radius: 5px;
   }
@@ -26,7 +26,8 @@
     color: #ff6060;
     p {
       margin: 0;
-      padding: 22px 15px;
+      height: 100%;
+      padding: 6px 15px;
       pointer-events: none;
     }
   }
