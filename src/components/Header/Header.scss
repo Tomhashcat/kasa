@@ -4,29 +4,26 @@ Header {
   width: 90%;
   margin-top: 50px;
   align-items: center;
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
-    width: 1240px;
-   
-  }
-  @media screen and (max-width: 375px) {
-    width: 335px;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: 768px) {
     margin-top: 20px;
     margin-bottom: 0px;
+    width: 100%;
   }
   img {
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 768px) {
       width: 145px;
     }
   }
   nav {
     display: flex;
     flex-direction: row;
+    justify-content:end;
     width: 200px;
-    @media screen and (min-width: 375px) {
-      width: 212px;
-    margin-left: 11%;
+    @media screen and (max-width: 768px) {
+     
     }
   }
   a {
@@ -39,7 +36,7 @@ Header {
     text-decoration: none;
     font-size: 18px;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 768px) {
       font-size: 12px;
     }
     &:hover {

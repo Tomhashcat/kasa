@@ -10,7 +10,7 @@ const LogoImg = styled.img``;
 function Header() {
   return (
     <header>
-      <LogoImg src={logoImage}></LogoImg>
+      <LogoImg src={logoImage} ></LogoImg>
       <nav>
         <Link  to="/">ACCEUIL</Link>
         <Link to="/Apropos" >A PROPOS</Link>

@@ -7,15 +7,17 @@ const DivBanner = styled.div`
 const Image = styled.img`
   
 `;
-
-function BannerHome() {
+const TextBanner = styled.p`
+  
+`;
+function BannerHome({text}) {
   return (
     <div className="Banner">
       <DivBanner className="Banner-Home">
         <Image src={ImageBannerHome} alt="Banner Home" />
        
       </DivBanner> 
-      <p className="Text-Banner">Chez vous, partout et ailleurs</p>
+      <TextBanner>{text}</TextBanner>
     </div>
   );
 }

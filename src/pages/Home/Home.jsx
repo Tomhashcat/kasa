@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <>
-     <BannerHome />
+     <BannerHome text="Chez vous, partout et ailleurs" />
       <div className="cards-container">
         {data.map((appart, id) => (
           <div className="card_logement" key={id}>
