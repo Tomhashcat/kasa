@@ -44,7 +44,7 @@
       @media screen and (max-width: 768px) {
         position: absolute;
        right: 32px;
-        margin-top: 40px;
+        margin-top: 72px;
       }
       .host-name {
         width: 93px;
@@ -67,7 +67,7 @@
       @media screen and (max-width: 768px) {
         position: absolute;
         left: 7%;
-        margin-top:59px;
+        margin-top:89px;
         width: 99px;
       }
       .star {
@@ -125,7 +125,7 @@
   margin-right: auto;
   justify-content: space-between;
   @media screen and (max-width: 768px) {
-   
+   width: 90%;
     margin-top: 0px;
     flex-direction: column;
   }
