@@ -1,3 +1,6 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
 export default function Tag(props) {
 	return (
 		<div className="tagContainer">
@@ -5,3 +8,7 @@ export default function Tag(props) {
 		</div>
 	);
 }
+
+Tag.propTypes = {
+	tag: PropTypes.string.isRequired // Le tag doit être une chaîne de caractères et est obligatoire
+  };

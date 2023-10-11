@@ -1,6 +1,6 @@
 .hostInfo-container {
   display: flex;
-  width: 100%;
+  width: 90%;
   justify-content: space-between;
   font-family: Montserrat;
   color: #ff6060;
@@ -8,39 +8,44 @@
   margin-top: -5%;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (max-width: 375px) {
-    width: 335px;
+  max-width: 1240px;
+  @media screen and (max-width: 768px) {
     margin-top: -52px;
   }
 
   .title-tags-container {
     display: flex;
     flex-direction: column;
-    @media screen and (max-width: 375px) {
-     font-size: 18px;
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
     }
-    h3{
-      @media screen and (max-width: 375px) {
+    h3 {
+      @media screen and (max-width: 768px) {
         font-size: 14px;
-       }
+      }
     }
   }
   .rate-host-container {
     display: flex;
     flex-direction: column;
     margin-right: 0px;
-    @media screen and (max-width: 375px) {
+
+    @media screen and (max-width: 768px) {
       margin-top: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: space-between;
+  
     }
     .host-comp {
       display: flex;
       margin-left: 39px;
       align-items: center;
-      @media screen and (max-width: 375px) {
-       position: absolute;
-       margin-left: -192px;
-       margin-top: 60px;
-       }
+      @media screen and (max-width: 768px) {
+        position: absolute;
+       right: 32px;
+        margin-top: 40px;
+      }
       .host-name {
         width: 93px;
         height: 52px;
@@ -59,20 +64,19 @@
       justify-content: space-between;
       margin-top: 20px;
       width: 196px;
-      @media screen and (max-width: 375px) {
+      @media screen and (max-width: 768px) {
         position: absolute;
-        margin-left: -360px;
-        margin-top: 80px;
+        left: 7%;
+        margin-top:59px;
         width: 99px;
-        }
+      }
       .star {
         width: 24px;
         height: 24px;
         fill: #ff6060;
-        @media screen and (max-width: 375px) {
-          
+        @media screen and (max-width: 768px) {
           width: 13px;
-          }
+        }
       }
     }
   }
@@ -80,59 +84,55 @@
 .tags-container {
   display: flex;
   text-align: center;
-  width: 365px;
+
   justify-content: space-between;
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 768px) {
     justify-content: flex-start;
-  
+
     margin-bottom: 72px;
   }
   .tagContainer {
     width: 115px;
-    height: 25px;
+    padding: 0px 22px;
     border-radius: 10px;
     background-color: #ff6060;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 768px) {
       width: 84px;
-      
+
       margin-right: 15px;
-       }
+    }
     .tagButton {
       font-size: 15px;
-      
-      
-      @media screen and (max-width: 375px) {
+
+      @media screen and (max-width: 768px) {
         display: flex;
         font-size: 10px;
-        
-        
       }
     }
   }
 }
+
 .collapse-fiche-container {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: row;
-
+  max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
-  @media screen and (max-width: 375px) {
-    width: 335px;
+  @media screen and (max-width: 768px) {
+   
     margin-top: 0px;
     flex-direction: column;
   }
   .sizeCol {
     width: 45%;
-    @media screen and (min-width: 1440px) {
-      width: 582px;
-    }
-    @media screen and (max-width: 375px) {
+
+    @media screen and (max-width: 768px) {
       width: 100%;
     }
   }

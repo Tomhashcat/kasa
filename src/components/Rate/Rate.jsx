@@ -1,3 +1,6 @@
+
+import React from 'react';
+import PropTypes from 'prop-types';
 import emptyStar from "../../assets/images/emptyStar.svg";
 import fullStar from "../../assets/images/star-rate.svg";
 
@@ -25,3 +28,6 @@ export default function Rate({ score }) {
 		</div>
 	);
 }
+Rate.propTypes = {
+	score: PropTypes.number.isRequired // Le score doit être un nombre et est obligatoire
+  };

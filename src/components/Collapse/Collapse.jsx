@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import Chevron from '../../assets/images/vectorBas.svg';
 import './Collapses.scss';
-
+import PropTypes from 'prop-types';
 export default function Collapse(props) {
   const [toggle, setToggle] = useState(false); //  definis le state du toggle (et false par défaut)
   const [heightEl, setHeightEl] = useState(); //  definis le state de la hauteur du collapse
@@ -39,3 +39,14 @@ export default function Collapse(props) {
     </div>
   );
 }
+Collapse.propTypes = {
+  Style: PropTypes.string, // Style doit être une chaîne de caractères (optionnel)
+  Title: PropTypes.string.isRequired, // Title doit être une chaîne de caractères (obligatoire)
+  Text: PropTypes.string.isRequired // Text doit être une chaîne de caractères (obligatoire)
+};
+
+
+
+
+
+

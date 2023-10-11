@@ -2,7 +2,7 @@ import { useState } from "react";
 import left from "../../assets/images/vector-left.svg";
 import right from "../../assets/images/vector-right.svg";
 import "./Carrousel.scss";
-
+import PropTypes from 'prop-types';
 
 export default function Carrousel({ slides }) {
 	const [current, setCurrent] = useState(0); //je définis l'index du premier slide à 0
@@ -14,7 +14,7 @@ export default function Carrousel({ slides }) {
 	const prevSlide = () => {
 		setCurrent(current === 0 ? length - 1 : current - 1); // on repart au dernier slide quand on est au premier
 	};
-
+	const isSliderNumberVisible = slides.length > 1;
 	return (
 		<section id="carrousel-container">
 		<div className="arrows">
@@ -45,13 +45,17 @@ export default function Carrousel({ slides }) {
 					}
 				>
 					{index === current && <img src={slide} alt="appartement à louer" />}
-					{index === current && (
-						<span className="slider__number">
-							{current + 1}/{length}
-						</span>
-					)}
+					
+					{index === current && isSliderNumberVisible && (
+            <span className="slider__number">
+              {current + 1}/{slides.length}
+            </span>
+          )}
 				</div>
 			))}
 		</section>
 	);
 }
+Carrousel.propTypes = {
+	slides: PropTypes.arrayOf(PropTypes.string).isRequired // slides doit être un tableau de chaînes de caractères (URLs des images)
+  };

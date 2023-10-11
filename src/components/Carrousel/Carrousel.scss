@@ -1,47 +1,32 @@
 #carrousel-container {
   padding: 50px 0px 0px 0px;
-  align-items: center;
-  width: 100%;
+
+  width: 90%;
   flex-direction: row;
-  justify-content: space-between;
-  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1240px;
   margin-bottom: 5%;
   .arrows {
     z-index: 1;
     display: flex;
     position: absolute;
     flex-direction: row;
-    width: 100%;
-
+    width: 80%;
+  padding-left: 5px;
     justify-content: space-between;
-    @media screen and (max-width: 375px) {
-    }
-    @media screen and (min-width: 1440px) {
-      width: 1240px;
-    }
-
+    margin-top: 158px;
+max-width: 1179px;
     .arrow {
-      margin-top: 14%;
       width: 60px;
       height: 93px;
-      @media screen and (max-width: 375px) {
-        margin-top: 31%;
-        width: 24px;
-        height: 24px;
-      }
+
+      
     }
     .leftArrow {
-      margin-left: 4%;
-      @media screen and (max-width: 375px) {
-        margin-left: 3%;
-      }
+      margin-left: 5%;
     }
-    .rightArrow {
-      margin-right: 4%;
-      @media screen and (max-width: 375px) {
-        margin-right: 10%;
-      }
-    }
+   
   }
   img {
     object-fit: cover;
@@ -49,10 +34,7 @@
     border-radius: 25px;
     width: 100%;
     mix-blend-mode: normal;
-    @media screen and (max-width: 375px) {
-      width: 335px;
-      height: 255px;
-    }
+    
   }
 
   .slider {
@@ -67,7 +49,7 @@
   display: flex;
   color: white;
   position: absolute;
-  margin-top: -3%;
+  margin-top: -46px;
   left: 50%;
   font-size: 54;
   @media screen and (max-width: 375px) {

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Cards.scss';
 export default function Card({ cover, title }) {
   return (
@@ -12,3 +13,7 @@ export default function Card({ cover, title }) {
     </article>
   );
 }
+Card.propTypes = {
+  cover: PropTypes.string.isRequired, // cover doit être une chaîne de caractères (URL de l'image)
+  title: PropTypes.string.isRequired // title doit être une chaîne de caractères
+};
