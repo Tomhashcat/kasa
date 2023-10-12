@@ -1,4 +1,4 @@
-import React ,{ useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { useParams, useNavigate } from 'react-router-dom';
 import Carrousel from '../../components/Carrousel/Carroussel';
@@ -29,13 +29,13 @@ export default function FicheLogement() {
   const slidePics = pickedAppart && pickedAppart.pictures;
   const tags = pickedAppart && pickedAppart.tags;
   const equipments = pickedAppart && pickedAppart.equipments;
-  const equip =
-    pickedAppart &&
-    equipments.map((item, index) => (
-      <li key={index} className="equipList">
-        {item}
-      </li>
-    ));
+  const equip = pickedAppart && (
+    <ul className="equipList">
+      {equipments.map((item, index) => (
+        <li key={index}>{item}</li>
+      ))}
+    </ul>
+  );
   return (
     pickedAppart && (
       <div key={params.id} className="fiche-container">
@@ -66,16 +66,16 @@ export default function FicheLogement() {
         </section>
 
         <div className="collapse-fiche-container">
-         <div className="sizeCol">
+          <div className="sizeCol">
             <Collapse
               className="col-Fiche"
               Title="Description"
-              
               Text={pickedAppart.description}
-              
             />
-         </div>
-          <div className="sizeCol"><Collapse className="col-Fiche" Title="Équipements" Text={equip} /></div>
+          </div>
+          <div className="sizeCol">
+            <Collapse className="col-Fiche" Title="Équipements" Text={equip} />
+          </div>
         </div>
       </div>
     )

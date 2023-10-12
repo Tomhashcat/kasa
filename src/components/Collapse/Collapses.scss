@@ -1,12 +1,13 @@
 .collapse {
   margin: 20px 0;
-  
+
   font-family: Montserrat;
   color: #ffffff;
   border-radius: 5px;
 
   &__visible {
-    cursor: pointer;background-color: #ff6060;
+    cursor: pointer;
+    background-color: #ff6060;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +45,7 @@
 .chevron {
   width: 24px;
   transform: rotate(0deg);
-  transition: 0.4s 0.4s ease-in-out;
+  transition: 0.2s 0.2s ease-in-out;
 }
 
 .rotated {
@@ -66,4 +67,5 @@
 
 .equipList {
   list-style-type: none;
+  margin-top: 0%;
 }
