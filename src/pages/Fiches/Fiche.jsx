@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import PropTypes from 'prop-types';
 import { useParams, useNavigate } from 'react-router-dom';
 import Carrousel from '../../components/Carrousel/Carroussel';
 import Collapse from '../../components/Collapse/Collapse';
@@ -81,3 +81,13 @@ export default function FicheLogement() {
     )
   );
 }
+FicheLogement.propTypes = {
+  // Vous pouvez spécifier les PropTypes pour les props ici
+  params: PropTypes.object.isRequired,
+  navigate: PropTypes.func.isRequired,
+  pickedAppart: PropTypes.object,
+  slidePics: PropTypes.array,
+  tags: PropTypes.array,
+  equipments: PropTypes.array,
+  equip: PropTypes.element,
+};

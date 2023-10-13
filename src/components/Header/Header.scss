@@ -20,11 +20,9 @@ Header {
   nav {
     display: flex;
     flex-direction: row;
-    justify-content:end;
+    
     width: 200px;
-    @media screen and (max-width: 768px) {
-     
-    }
+    
   }
   a {
     display: flex;
