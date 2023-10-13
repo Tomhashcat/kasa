@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 import logoImage from '../../assets/images/LOGOdark.png';
 import "./Footer.scss";
@@ -13,5 +14,9 @@ function Footer() {
         </footer>
     )
 }
-
+Footer.propTypes = {
+    logoImage: PropTypes.string,  //  (ici, une chaîne de caractères)
+    someOtherProp: PropTypes.number,  // (ici, un nombre)
+   
+};
 export default  Footer;
