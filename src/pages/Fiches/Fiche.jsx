@@ -1,4 +1,4 @@
-import React, { useState,  useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useParams, useNavigate } from 'react-router-dom';
 import Carrousel from '../../components/Carrousel/Carroussel';
@@ -40,13 +40,15 @@ const FicheLogement = () => {
   const tags = pickedAppart && pickedAppart.tags;
   const equipments = pickedAppart && pickedAppart.equipments;
   const equip = pickedAppart && (
-    <ul className="equipList">
-      {equipments.map((item, index) => (
-        <li key={index}>{item}</li>
-      ))}
-    </ul> 
+    
+      <ul className="equipList">
+        {equipments.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+   
   );
-  
+
   return (
     pickedAppart && (
       <div key={params.id} className="fiche-container">
@@ -81,21 +83,24 @@ const FicheLogement = () => {
             <Collapse
               className="col-Fiche"
               Title="Description"
-              Text={pickedAppart.description}
+              Text={pickedAppart.description ? String(pickedAppart.description) : ''}
             />
           </div>
           <div className="sizeCol">
-            <Collapse className="col-Fiche" Title="Équipements" Text={equip}/>
-            
+            <Collapse
+              className="col-Fiche"
+              Title="Équipements"
+              Text={equip ? String(equip) : ''}
+            />
           </div>
         </div>
       </div>
     )
   );
-}
+};
 FicheLogement.propTypes = {
   // Vous pouvez spécifier les PropTypes pour les props ici
-  
+
   pickedAppart: PropTypes.object,
   slidePics: PropTypes.array,
   tags: PropTypes.array,

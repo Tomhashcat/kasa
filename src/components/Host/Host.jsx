@@ -14,5 +14,5 @@ export default function Host(props) {
 Host.propTypes = {
   hostName: PropTypes.string.isRequired, // Le nom de l'hôte doit être une chaîne de caractères (obligatoire)
   hostPic: PropTypes.string.isRequired, // L'URL de la photo de l'hôte doit être une chaîne de caractères (obligatoire)
-  id: PropTypes.string.isRequired, // L'ID est obligatoire et peut être une chaîne de caractères
+  id: PropTypes.string // L'ID est obligatoire et peut être une chaîne de caractères
 };

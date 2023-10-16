@@ -29,5 +29,5 @@ export default function Rate({ score }) {
 	);
 }
 Rate.propTypes = {
-	score: PropTypes.number.isRequired // Le score doit être un nombre et est obligatoire
+	score: PropTypes.string.isRequired // Le score doit être un nombre et est obligatoire
   };

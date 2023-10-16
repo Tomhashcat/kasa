@@ -34,7 +34,7 @@ export default function Collapse(props) {
         className={toggle ? 'collapse__toggle animated' : 'collapse__toggle'}
         style={{ height: toggle ? `${heightEl}` : '0px' }}
       >
-        <p aria-hidden={toggle ? 'true' : 'false'}>{props.Text}</p>
+        <div aria-hidden={toggle ? 'true' : 'false'}>{props.Text}</div>
       </div>
     </div>
   );
@@ -42,7 +42,7 @@ export default function Collapse(props) {
 Collapse.propTypes = {
   Style: PropTypes.string, // Style doit être une chaîne de caractères (optionnel)
   Title: PropTypes.string.isRequired, // Title doit être une chaîne de caractères (obligatoire)
-  Text: PropTypes.string.isRequired // Text doit être une chaîne de caractères (obligatoire)
+  Text: PropTypes.string // Text doit être une chaîne de caractères 
 };
 
 
