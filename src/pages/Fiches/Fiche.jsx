@@ -39,16 +39,19 @@ const FicheLogement = () => {
   const slidePics = pickedAppart && pickedAppart.pictures;
   const tags = pickedAppart && pickedAppart.tags;
   const equipments = pickedAppart && pickedAppart.equipments;
-  const equip = pickedAppart && (
-    
-      <ul className="equipList">
+
+  let equipList = '';
+
+  if (equipments && equipments.length > 0) {
+    equipList = (
+      <ul>
         {equipments.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
       </ul>
-   
-  );
-
+    );
+  }
+ 
   return (
     pickedAppart && (
       <div key={params.id} className="fiche-container">
@@ -83,14 +86,14 @@ const FicheLogement = () => {
             <Collapse
               className="col-Fiche"
               Title="Description"
-              Text={pickedAppart.description ? String(pickedAppart.description) : ''}
+              Text={pickedAppart.description}
             />
           </div>
           <div className="sizeCol">
             <Collapse
               className="col-Fiche"
               Title="Équipements"
-              Text={equip ? String(equip) : ''}
+              Text={equipList}
             />
           </div>
         </div>

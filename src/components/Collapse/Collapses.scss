@@ -21,22 +21,29 @@
     opacity: 0;
     background-color: #f7f7f7;
     border-radius: 5px;
+    list-style-type: none;
     transition:
       opacity 0s ease-in,
       height 0.2s ease-in;
-    color: #ff6060;
-    p {
+    color: #ff6060; 
+    .p {
       margin: 0;
       height: 100%;
       padding: 6px 15px;
+     
       pointer-events: none;
+    }
+    ul{
+      list-style-type: none;
+    
+    margin-top: 0;
     }
   }
 }
 
 .animated {
   opacity: 1;
-  padding-bottom: 41px;
+  padding: 1px ; padding-bottom: 20px;
   transition:
     height 0.2s ease-in,
     opacity 0.2s ease-in;
@@ -65,7 +72,4 @@
   width: 100%;
 }
 
-.equipList {
-  list-style-type: none;
-  margin-top: 0%;
-}
+
