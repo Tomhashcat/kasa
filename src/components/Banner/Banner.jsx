@@ -1,23 +1,23 @@
-import ImageBannerHome from '../../assets/Mask-Group.png';
 import React from 'react';
-
-import "./Banner.scss";
 import PropTypes from 'prop-types';
+import ImageBannerHome from '../../assets/Mask-Group.png';
 
+import './Banner.scss';
 
-function BannerHome({text}) {
+function BannerHome({ text, image }) {
   return (
     <div className="Banner">
       <div className="Banner-Home">
         <img src={ImageBannerHome} alt="Banner Home" />
-       
-      </div> 
+      </div>
       <p>{text}</p>
     </div>
   );
 }
+
 BannerHome.propTypes = {
-  text: PropTypes.string.isRequired, 
-  image: PropTypes.string.isRequired
+  text: PropTypes.string.isRequired,
+  image: PropTypes.string,
 };
+
 export default BannerHome;
