@@ -43,5 +43,9 @@ Header {
       border-top: none;
       border-right: none;
     }
+    &.active{border: 1px solid;
+      border-left: none;
+      border-top: none;
+      border-right: none;}
   }
 }
